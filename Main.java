@@ -6,13 +6,14 @@ public class Main {
     Cinema cinema = new Cinema("cinemark", 1);
     Cinema cinema2 = new Cinema("cinecataratas", 2);
 
-    Sessoes sessao = new Sessoes(1,"Sexta-feira - 14:00",4);
-    Sessoes sessao2 = new Sessoes(2,"Domingo - 20:00",5);
+    Categoria cat1 = new Categoria("terror", 3);
+    Categoria cat2 = new Categoria("Aventura", 4);
 
-    cinema.getSessoes().add(sessao);
-    cinema2.getSessoes().add(sessao2);
+    cinema.getCategoria().add(cat1);
+    cinema2.getCategoria().add(cat2);
 
     System.out.println(cinema);
+    System.out.println(cinema2);
 
     }
 }

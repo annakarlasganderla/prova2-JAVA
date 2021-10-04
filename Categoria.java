@@ -1,20 +1,15 @@
 package Prova2;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Cinema {
-
+public class Categoria {
     private String nome;
     private long id;
-    private List<Categoria> categoria = new ArrayList<Categoria>();
 
-    public Cinema() {
-    }
-
-    public Cinema(String nome, long id) {
+    public Categoria(String nome, long id) {
         this.nome = nome;
         this.id = id;
+    }
+
+    public Categoria() {
     }
 
     public String getNome() {
@@ -33,20 +28,11 @@ public class Cinema {
         this.id = id;
     }
 
-    public List<Categoria> getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(List<Categoria> categoria) {
-        this.categoria = categoria;
-    }
-
     @Override
     public String toString() {
-        return "Cinema{" +
+        return "Categoria{" +
                 "nome='" + nome + '\'' +
                 ", id=" + id +
-                ", sessoes=" + categoria +
                 '}';
     }
 }
